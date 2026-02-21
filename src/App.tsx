@@ -32,7 +32,7 @@ function App() {
         <Testimonials />
       </section>
 
-      <section className="bg-navy-950 relative">
+      <section className="bg-navy-950 p-6 relative">
         <Form />
         <Footer />
       </section>

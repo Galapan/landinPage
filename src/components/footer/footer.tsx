@@ -10,18 +10,19 @@ import FooterListItem from "./footer-list-item";
 
 export const Footer = () => {
   return (
-    <footer className="pt-[260px] pb-[60px] px-6">
+    <footer className="pt-[260px] pb-[160px] px-6">
       <img className="mb-10" src="/images/logo.svg" alt="logo" />
 
-      <ContactItem {...contactInformation[0]} />
-
-      <div className="flex flex-col gap-4">
-        {contactInformation.map((contact: ContactInformation) => (
-          <ContactItem key={contact.alt} {...contact} />
-        ))}
+      <div className="flex flex-col gap-4 md:flex-row">
+        <ContactItem styles="flex-1" {...contactInformation[0]} />
+        <div className="flex flex-col gap-4 flex-1 ">
+          {contactInformation.slice(1, 4).map((contact: ContactInformation) => (
+            <ContactItem key={contact.alt} {...contact} />
+          ))}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-8 mt-16">
+      <div className="flex flex-col gap-8 mt-16 md:flex-row md:gap-24">
         <ul>
           {pages.map((page: string) => (
             <FooterListItem key={page} text={page} />
