@@ -2,6 +2,8 @@ import { type JSX } from "react";
 import { ContactItem } from "./contact-item";
 import FooterListItem from "./footer-list-item";
 import FacebookIcon from "./facebook-icon";
+import XIcon from "./x-icon";
+import InstagramIcon from "./instagram-icon";
 
 interface ContactInformation {
   text: string;
@@ -40,11 +42,19 @@ const medias: Media[] = [
     text: "Facebook",
     icon: <FacebookIcon />,
   },
+  {
+    text: "X",
+    icon: <XIcon />,
+  },
+  {
+    text: "Instagram",
+    icon: <InstagramIcon />,
+  },
 ];
 
 export const Footer = () => {
   return (
-    <footer className="pt-[260px] pb-[300px]">
+    <footer className="pt-[260px] pb-[60px] px-6">
       <img className="mb-10" src="/images/logo.svg" alt="logo" />
 
       <div className="flex flex-col gap-4">
@@ -66,14 +76,16 @@ export const Footer = () => {
           ))}
         </ul>
 
-        {medias.map((media: Media) => (
-          <div
-            key={media.text}
-            className="text-white hover:text-teal-200 border rounded-full size-[30px] p-0.5"
-          >
-            {media.icon}
-          </div>
-        ))}
+        <div className="flex justify-center gap-4">
+          {medias.map((media: Media) => (
+            <div
+              key={media.text}
+              className="text-white hover:text-teal-200 border rounded-full size-[30px] p-0.5"
+            >
+              {media.icon}
+            </div>
+          ))}
+        </div>
       </div>
     </footer>
   );
