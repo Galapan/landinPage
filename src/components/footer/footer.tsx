@@ -1,56 +1,12 @@
-import { type JSX } from "react";
+import {
+  conditions,
+  contactInformation,
+  medias,
+  pages,
+} from "../../common/constants";
+import type { ContactInformation, Media } from "../../types/type";
 import { ContactItem } from "./contact-item";
 import FooterListItem from "./footer-list-item";
-import FacebookIcon from "./facebook-icon";
-import XIcon from "./x-icon";
-import InstagramIcon from "./instagram-icon";
-
-interface ContactInformation {
-  text: string;
-  iconUrl: string;
-  alt: string;
-}
-
-const contactInformation: ContactInformation[] = [
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    iconUrl: "/images/icon-location.svg",
-    alt: "location",
-  },
-  {
-    text: "+1-543-123-4567",
-    iconUrl: "/images/icon-phone.svg",
-    alt: "phone",
-  },
-  {
-    text: "example@fylo.com",
-    iconUrl: "/images/icon-email.svg",
-    alt: "email",
-  },
-];
-
-const pages: string[] = ["About us", "Jobs", "Press", "Blog"];
-const conditions: string[] = ["Contact us", "Terms", "Privacy"];
-
-interface Media {
-  text: string;
-  icon: JSX.Element;
-}
-
-const medias: Media[] = [
-  {
-    text: "Facebook",
-    icon: <FacebookIcon />,
-  },
-  {
-    text: "X",
-    icon: <XIcon />,
-  },
-  {
-    text: "Instagram",
-    icon: <InstagramIcon />,
-  },
-];
 
 export const Footer = () => {
   return (

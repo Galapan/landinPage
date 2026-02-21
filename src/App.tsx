@@ -1,10 +1,17 @@
-import { Header, Hero, Features, MoreInformation, Testimonials, Form, Footer } from "./components"
+import {
+  Header,
+  Hero,
+  Features,
+  MoreInformation,
+  Testimonials,
+  Form,
+  Footer,
+} from "./components";
 
 function App() {
-
   return (
-    <main className="w-[375px] m-auto">
-      <section className="bg-navy-850 p-6 h-[420px] relative">
+    <main className="m-auto">
+      <section className="bg-gray-400 p-6 h-[420px] relative md:h-[800px]">
         <Header />
         <img
           className="relative z-10 mt-12"
@@ -12,7 +19,7 @@ function App() {
           alt="intro illustration"
         />
         <img
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 w-full"
           src="../images/bg-curvy-mobile.svg"
           alt="curvy background"
         />
@@ -29,9 +36,8 @@ function App() {
         <Form />
         <Footer />
       </section>
-
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
