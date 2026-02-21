@@ -1,4 +1,9 @@
-import type { ContactInformation, Feature, Media } from "../types/type";
+import type {
+  ContactInformation,
+  Feature,
+  Media,
+  Testimonial,
+} from "../types/type";
 import FacebookIcon from "../components/footer/facebook-icon";
 import XIcon from "../components/footer/x-icon";
 import InstagramIcon from "../components/footer/instagram-icon";
@@ -63,5 +68,29 @@ export const features: Feature[] = [
     description:
       "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
     iconUrl: "../images/icon-any-file.svg",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Satish Patel",
+    role: "Founder & CEO, Huddle",
+    image: "../images/profile-1.jpg",
+    quote:
+      "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+  },
+  {
+    name: "Bruce McKenzie",
+    role: "Founder & CEO, Huddle",
+    image: "../images/profile-2.jpg",
+    quote:
+      "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+  },
+  {
+    name: "Iva Boyd",
+    role: "Founder & CEO, Huddle",
+    image: "../images/profile-3.jpg",
+    quote:
+      "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
   },
 ];

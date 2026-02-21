@@ -14,3 +14,9 @@ export interface Feature {
   description: string;
   iconUrl: string;
 }
+export interface Testimonial {
+  name: string;
+  role: string;
+  image: string;
+  quote: string;
+}

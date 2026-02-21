@@ -13,6 +13,8 @@ export const Footer = () => {
     <footer className="pt-[260px] pb-[60px] px-6">
       <img className="mb-10" src="/images/logo.svg" alt="logo" />
 
+      <ContactItem {...contactInformation[0]} />
+
       <div className="flex flex-col gap-4">
         {contactInformation.map((contact: ContactInformation) => (
           <ContactItem key={contact.alt} {...contact} />

@@ -11,10 +11,10 @@ import {
 function App() {
   return (
     <main className="m-auto">
-      <section className="bg-gray-400 p-6 h-[420px] relative md:h-[800px]">
+      <section className="bg-gray-400 p-6 h-[420px] relative md:h-[640px]">
         <Header />
         <img
-          className="relative z-10 mt-12"
+          className="relative z-10 mt-12 w-[320px] md:w-[450px] mx-auto"
           src="../images/illustration-intro.png"
           alt="intro illustration"
         />

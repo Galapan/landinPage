@@ -1,13 +1,13 @@
 interface Props {
-    name: string;
-    role: string;
-    image: string;
-    quote: string;
+  name: string;
+  role: string;
+  image: string;
+  quote: string;
 }
 
-export const TestimonialCard = ({name, image, role, quote}: Props) => {
+export const TestimonialCard = ({ name, image, role, quote }: Props) => {
   return (
-    <div className="bg-navy-850 rounded-sm p-6 w-[280px]">
+    <div className="bg-navy-850 rounded-sm p-6">
       <blockquote className="text-[12px] mb-4">{quote}</blockquote>
       <div className="flex gap-2 items-center">
         <img className="size-6 rounded-full" src={image} alt={name} />
@@ -17,5 +17,5 @@ export const TestimonialCard = ({name, image, role, quote}: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -3,7 +3,7 @@ import { features } from "../common/constants";
 
 export const Features = () => {
   return (
-    <div className="flex flex-col gap-20 mt-[140px]">
+    <div className="grid grid-cols-1 gap-20 mt-[140px] md:grid-cols-2">
       {features.map(({ title, description, iconUrl }: Feature) => (
         <div key={title} className="flex flex-col items-center text-center">
           <img src={iconUrl} alt={title} />
